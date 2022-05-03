@@ -36,6 +36,9 @@ body{
     border-radius: 10px;
     height: 20px;
 }
+a{
+    text-decoration: none;
+  }
 
 .formDiv{
     width: 100%;
@@ -93,14 +96,19 @@ body{
     width: 100%;
     margin-top: 2px;
 }
+.finish{
+    margin-top: 20px;
+}
+
 .btn1{
-    width: 70%;
+    width: 50%;
     padding: 15px;
     background-color: green;
     margin-top: 15px;
     color: lavender;
     border-radius:  20px; 
     border-style: none;
+    display: inline-block;
 }
 .btn2{
     width: 70%;
