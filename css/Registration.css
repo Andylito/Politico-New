@@ -21,15 +21,24 @@ body{
 .formWraper{
     display: flex;
     width: 55%;
-    height: 500px;
-    background-color: yellowgreen;
+    max-width: 500px;
+    height: 550px;
     margin-top: 80px;
     border-radius: 10px;
     box-shadow:0px 0px 20px black;
 }
+.field {
+    display: flex;
+    flex-flow: column-reverse;
+    margin-bottom: 1em;    
+}
+.inner{
+    border-radius: 10px;
+    height: 20px;
+}
 
 .formDiv{
-    width: 50%;
+    width: 100%;
     padding: 8%;
     background-color: lavender;
     text-align: center;
@@ -40,19 +49,7 @@ body{
     color: green;
     margin-top: -5px;
 }
-.welcomeDiv{
-    width: 50%;
-    padding: 10px;
-    background-image: url(./Green\ forest\ 2.avif);
-    background-position: cover;
-    text-align: center;
-    color: white;
-}
 
-.welcomeDiv h2{
-    margin-top: 150px;
-
-}
 
 .icon{
     width: 30px;
@@ -68,20 +65,24 @@ body{
      color: green;
  }
 
-.text{
+/* .text{
     font-size: small;
-}
+} */
 
 
 
 .formGroup{ 
     width: 100%;
     position: relative;
+    border-radius: 20px;
+
 }
 .formGroup input{
     width: 93%;
     padding: 10px;
     margin-bottom: 5px;
+    border-radius: 10px;
+    border: none;
 }
 .formGroup i {
     position: absolute;

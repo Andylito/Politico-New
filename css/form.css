@@ -1,0 +1,13 @@
+.formGroup{ 
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+
+}
+.formGroup input{
+    width: 93%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border: none;
+}

@@ -4,8 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Politico</title>
-    <link rel="stylesheet" href="./css/HomePage.css">
-    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="../css/Registration.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -18,28 +17,41 @@
 
                 </div>
                 <hr> <!--Horizontal Line-->
-                <p class="text">Sign Up with Email Address</p>
+
                  <div class="formGroup">
-                     <input type="text" name="name" id="name" placeholder="Name"> 
+                     <input type="text" name="name" id="name" placeholder="First Name"> 
                  </div>
+                 <div class="formGroup">
+                    <input type="text" name="name" id="name" placeholder="Last Name"> 
+                </div>
                  <div class="formGroup">
                      <input type="email" name="email" id="email" placeholder="Email"> 
                  </div>
                  <div class="formGroup">
+                    <input type="text" name="name" id="name" placeholder="Phone Number"> 
+                </div>
+                 <div class="formGroup">
                      <input type="password" name="password" id="password" placeholder="Password"> 
                  </div>
-                 <div class="checkBox">
-                     <input type="checkbox" name="checkBox" id="checkbox">
-                     <span class="text">I Agree with Term & Conditions.</span>
-                 </div>
-                 <button class="btn1">SIGN IN</button>
+                 <div class="formGroup">
+                    <input type="password" name="password" id="password" placeholder="Confirm Password"> 
+                </div>
+                <div class="field">
+                    <select class= "inner" type="text" name="userType" id="userType" required>
+                      <option> Ordinary User</option>
+                      <option> Politician</option>
+                    </select>
+                    <label for="userType">Select User Type:</label>
+                  </div>
+                  <div>
+                      <a href="http://127.0.0.1:5500/html/Votepage.html"></a>
+                    <button  class="btn1" >FINISH</button>
+                  </div>
+                
+                 
+                 
             </div>
-            <div class="welcomeDiv">
-                <h2>Welcome Back</h2> 
-                <p class="text">Get in touch with the news and updates of the election.</p>
-                <button class="btn2">SIGN IN</button>
-            </div>
-        </div>
+         
     </div>
     
     <script>
