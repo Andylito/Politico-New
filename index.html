@@ -19,25 +19,45 @@
                 </div>
                 <hr> <!--Horizontal Line-->
                 <p class="text">Sign Up with Email Address</p>
+                <div class="formGroup">
+                    <input type="email" name="email" id="email" placeholder="Email"> 
+                </div>
                  <div class="formGroup">
-                     <input type="text" name="name" id="name" placeholder="Name"> 
-                 </div>
-                 <div class="formGroup">
-                     <input type="email" name="email" id="email" placeholder="Email"> 
+                     <input type="Phone Number" name="Phone Number" id="Phone Number" placeholder="Phone Number"> 
                  </div>
                  <div class="formGroup">
                      <input type="password" name="password" id="password" placeholder="Password"> 
                  </div>
+                 <div class="formGroup">
+                    <input type="Confirm Password" name="Confirm Password" id="Confirm Password" placeholder="Confirm Password"> 
+                </div>
+                <div class="field">
+                    <select class= "inner" type="text" name="userType" id="userType" required>
+                      <option> Ordinary User</option>
+                      <option> Politician</option>
+                    </select>
+                    <label for="userType">Select User Type:</label>
+                  </div>
                  <div class="checkBox">
                      <input type="checkbox" name="checkBox" id="checkbox">
                      <span class="text">I Agree with Term & Conditions.</span>
                  </div>
-                 <button class="btn1">SIGN IN</button>
+                 <button class="btn1">SIGN UP</button>
             </div>
             <div class="welcomeDiv">
                 <h2>Welcome Back</h2> 
+                <div class="formGroup">
+                    <input type="email" name="email" id="email" placeholder="Email"> 
+                </div>
+                <div class="formGroup">
+                    <input type="password" name="password" id="password" placeholder="Password"> 
+                </div>
                 <p class="text">Get in touch with the news and updates of the election.</p>
-                <button class="btn2">SIGN IN</button>
+                <div class="call-to-action">
+                    <div class="placeholder">
+                        <a href="http://127.0.0.1:5500/html/Parties.html" class="default-button" > SIGN IN </a>
+                    </div>
+                  </div>
             </div>
         </div>
     </div>
@@ -50,3 +70,4 @@
         </script>
 </body>
 </html>
+

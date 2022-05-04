@@ -8,7 +8,21 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
-
+.field {
+    display: flex;
+    flex-flow: column-reverse;
+    margin-bottom: 1em;  
+}
+.call-to-action a {
+    padding: 20px;
+    width: 200px;
+    margin: -20px auto;
+    margin-top: 20px;
+    background:lavender;
+    color: green;
+    display: block;
+    border-radius: 38px;
+  }
 .datetime{
     text-size-adjust: 50px;
 }
