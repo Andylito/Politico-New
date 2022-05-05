@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #E5E5E5;
+    /* background-image: url(../images/homepage222.jpg);
+    background-size: cover; */
+    /* background-position: 0%; */
+    background-color: #E2E2E2;
+}
+
+.homepage__main__section {
+       display: flex;
+       grid-template-columns: 1fr 3fr;
+}
+
+#main__section__first__div {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* .just__another__div {
+    fle
+} */
+
+
+.choose__list > li{
+    background-color: white;
+    color: #363740;
+    margin-block: 32px;
+    padding-left: 5px;
+}
+
+.choose__list > li:hover {
+    padding-left: 15px;
+    transition: all ease-in .4s
+}
+
+.choose__list a:hover {
+    transition: all ease-in-out 1s;
+}
+
+#main__section__first__div > p {
+    font-weight: 700;
+    font-size: 24px;
+    padding-left: 5px;
+}
+
+.admin__profile__image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 30%;
+    color: #fff;
+}
+
+.admin__profile__image > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-inline: 1rem;
+}
+
+
+.admin__profile__image p {
+    margin-right: 1rem;
+}
+
+.overview__content {
+    padding-top: 2rem;
+    display: flex;
+}
+
+.overview__details {
+    padding-top: .5rem  ;
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%; 
+     
+}
+
+.overview__content {
+    padding-top: 2rem;
+    display: flex;
+}
+
+.overview__details {
+    padding-top: .5rem  ;
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%; 
+     
+}
+
+.overview__breakdown {
+    background-color: #FFFFFF;
+    height: 100%;
+    width: 13rem;
+    align-self: center;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: .3rem;
+}
+
+.overview__breakdown p:first-child{
+    font-size: 26px;
+}
+.election__update {
+    width: 30%; 
+    padding: .5rem;
+    background-color: #fff;
+}
+
+
+.main__footer {
+    background-color: rgb(25, 23, 23);
+    color: white;
+    min-height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+[data-type = "office"], [data-type = "party"] {
+    padding: .4rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    background-color: green;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+ 
+.fa-plus {
+    margin-left: .4rem;
+}
+
+@media (max-width: 800px) {
+    .election__update {
+        width: 100%; 
+        /* padding: .5rem; */
+        text-align: center;
+    }
+
+    .overview__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .overview__details {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    [data-type = "office"], [data-type = "party"] {
+        font-size: 1rem;
+        margin: 1rem .5rem;
+    }
+
+    .admin__profile__image {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.wrapper {
+    display: flex;
+}
+
+main{ 
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-block: 8rem 4rem;
+}
+
+.create__btns {
+    margin-bottom: 1rem;
+    margin-left: 35rem;
+}
+
+.create__btns [data-type="office"] {
+    margin-left: 2rem;
+}
+
+.to__be__deleted {
+    display: flex;
+    background-color: white;
+    /* max-width: 70%; */
+    /* margin-left: 15%; */
+}
+
+.to__be__deleted:nth-child(even) {
+    background-color: #F2F2F2;
+    border-block: 1px solid #F2F2F2;
+}
+
+.to__be__deleted * {
+     margin: 1rem;
+     flex: 1;
+}
+
+.logo {
+    height: auto;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.delete-icon {
+    color: yellowgreen;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.edit-icon {
+    color: orange;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.modal {
+    font-size: 24px;
+    padding: 4rem;
+    position: relative;  
+    left: 21%;
+    top: 62px;
+    background-color: #363740;
+    font-weight: 700;
+}
+
+.modal > p {
+    color: white;
+}
+
+.close__button {
+    padding: 12px;
+    width: 9rem;
+    border-radius: 15px;
+    font-size: 18px;
+    margin: 12px;
+    margin-top: 21px;
+    border: none;
+    cursor: pointer;
+}
+
+.close__button:hover {
+    background-color: red;
+    color: white;
+}
+
+.create__party__dailog{
+    font-size: 24px;
+    padding: 4rem;
+    position: relative;  
+    left: 31%;
+    top: 62px;
+    font-weight: 700;
+}
+
+/* @media (max-width:900px) {
+    main {
+        overflow: auto;
+    }
+} */

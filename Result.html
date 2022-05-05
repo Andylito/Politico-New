@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politico</title>
+    <link rel="stylesheet" href="./css/Result.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <body>
+    <main>
+        <a class="vote" href="http://127.0.0.1:5500/html/Votepage.html">Vote Page</a>
+      <div class="clear-space"></div>
+      <section class="wrapper">
+        <br/>
+          <div class="box responsive no-bg no-shadow">
+            <h1 class="uppercase centered-text biggest-text"> 2022 Election Result </h1>
+            <table class="">
+              <tr>
+                <th>Candidate</th>
+                <th>Office</th>
+                <th>Party Name</th>
+                <th>Votes</th>
+                <th>Winner</th>
+              </tr>
+              <tr>
+                <td>Atiku Abubakar</td>
+                <td>@President</td>
+                <td> <div class="election"><img src="./css/Peoples_Democratic_Party_Nigeria.png" class="circle">
+                  People Democratic Party </div></td>
+                <td>
+                    99990
+                </td>
+                <td> loss </td>
+              </tr>
+              <tr>
+                <td>Rotimi Amaechi</td>
+                <td>@President</td>
+                <td> <div class="election"><img src="./css/Peoples-Progressive-Party-PPP.jpg" class="circle">
+                  People Progressive party </div></td>
+                <td>
+                    99001
+                </td>
+                <td> won </td>
+              </tr>
+              <tr>
+                <td>Yemi Osinbajo </td>
+                <td> @President</td>
+                <td> <div class="election"><img src="./css/yemi-osinbajo.jpg" class="circle">
+                  All Progressives Congress </div></td>
+                <td>
+                  97867
+                </td>
+                <td> loss </td>
+              </tr>
+            </table>
+          </div>
+          <br/>
+        </div>
+      </section>
+    </main>
+    <br/>
+    <div class="toast"> hello I am a toast bar <span class="toast-close">x</span></div>
+
+    <!-- modal boxes for extra functionalities -->
+
+<!-- The Delete Modal  -->
+    <div id="deleteAction" class="modal">
+      <div class="modal-content mobile-size centered-text">
+        <h2> Are you sure you want to delete this?</h2>
+        <br />
+        <button class="red button-bigger close" onclick="toast('I love my toat bar')"> Yes Delete</button>
+        <button class="blue-gray button-bigger close"> No, Cancel</button>
+      </div>
+    </div>
+
+  <!-- The Modal Edit Profile -->
+  <div id="edit-profile" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <form action="../pages/user_dashboard.html" class="  no-shadow">
+          <h3>Update Profile</h3>
+          <hr/>
+
+          <div class="field">
+              <input type="text" name="firstname" id="firstname" placeholder="Emmanuel" required>
+              <label for="firstname">First Name:</label>
+            </div>
+
+            <div class="field">
+              <input type="text" name="lastname" id="lastname" placeholder="Daniel" required>
+              <label for="lastname">Last Name:</label>
+            </div>
+
+            <div class="field">
+              <input type="email" name="email" id="email" placeholder="ecomje@gmail.com" required>
+              <label for="email">Email:</label>
+            </div>
+
+            <div class="field">
+              <input type="phone" name="phone" id="phone" placeholder="phone: 08145467267" required>
+              <label for="phone">Phone Number:</label>
+            </div>
+            <div class="field">
+              <input type="file" name="profile-logo" id="profile-logo" accept="image/*" required>
+              <label for="profile-logo">Profile Logo:</label>
+            </div>
+
+            <button type="submit" class="button button-bigger w100">Update Profile</button>
+          </div>
+      </form>
+    </div>
+  </div>
+  <footer data-add-file='./footer.txt'>
+    <div>
+      <p>2022 &copy;POLITICO</p>
+    </div>
+  </footer>
+  </body>
+</html>
